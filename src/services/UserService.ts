@@ -29,6 +29,6 @@ export class UserService {
   };
 
   deleteUser = (name: string) => {
-    this.db = this.db.filter(user => user.name !== name)
-  }
+    this.db = this.db.filter((user) => user.name !== name);
+  };
 }

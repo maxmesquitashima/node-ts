@@ -1,23 +1,27 @@
 {
   "compilerOptions": {
     /* Módulos e Target (ES Modules for Node.js) */
-    "target": "ES2022",                             /* Especifica a versão alvo do JavaScript. Usar ES2022 é bom para features modernas do Node.js. */
-    "module": "commonjs",                           /* Define o sistema de módulos. 'NodeNext' garante compatibilidade com as regras de ES Modules do Node.js. */
-    "moduleResolution": "Node",                 /* Define como o TypeScript resolve os módulos, em linha com 'NodeNext'. */
-    
+    "target": "ES2022" /* Especifica a versão alvo do JavaScript. Usar ES2022 é bom para features modernas do Node.js. */,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "module": "commonjs" /* Define o sistema de módulos. 'NodeNext' garante compatibilidade com as regras de ES Modules do Node.js. */,
+    "moduleResolution": "Node" /* Define como o TypeScript resolve os módulos, em linha com 'NodeNext'. */,
+    "allowJs": true,
     /* Configurações de Saída e Diretórios */
-    "outDir": "./build",                            /* Diretório onde os arquivos JavaScript compilados serão colocados (usado pelo seu script 'build'). */
-    "rootDir": "./src",                             /* Diretório onde os arquivos TypeScript estão localizados. */
+    "outDir": "./build" /* Diretório onde os arquivos JavaScript compilados serão colocados (usado pelo seu script 'build'). */,
+    "rootDir": "./src" /* Diretório onde os arquivos TypeScript estão localizados. */,
 
     /* Rigor (Recomendado para projetos TS modernos) */
-    "strict": true,                                 /* Habilita todas as opções rigorosas de verificação de tipo. */
-    "esModuleInterop": true,                        /* Habilita a interoperabilidade padrão entre módulos CJS e ESM (útil para `import express from "express"`). */
-    "skipLibCheck": true,                           /* Ignora a verificação de tipo dos arquivos de definição de terceiros (melhora o tempo de compilação). */
-    "forceConsistentCasingInFileNames": true,       /* Garante que as referências a arquivos tenham o mesmo uso de maiúsculas/minúsculas. */
+    "strict": true /* Habilita todas as opções rigorosas de verificação de tipo. */,
+    "esModuleInterop": true /* Habilita a interoperabilidade padrão entre módulos CJS e ESM (útil para `import express from "express"`). */,
+    "skipLibCheck": true /* Ignora a verificação de tipo dos arquivos de definição de terceiros (melhora o tempo de compilação). */,
+    "forceConsistentCasingInFileNames": true /* Garante que as referências a arquivos tenham o mesmo uso de maiúsculas/minúsculas. */,
 
     /* Outras Configurações */
-    "sourceMap": true,                              /* Gera arquivos .map para facilitar a depuração (útil para 'ts-node-dev'). */
-    "resolveJsonModule": true                       /* Permite importar módulos JSON. */
+    "sourceMap": true /* Gera arquivos .map para facilitar a depuração (útil para 'ts-node-dev'). */,
+    "resolveJsonModule": true /* Permite importar módulos JSON. */
   },
-  "include": ["src/**/*"]                           /* Inclui todos os arquivos na pasta 'src' e subpastas para compilação. */
+  "include": [
+    "src/**/*"
+  ] /* Inclui todos os arquivos na pasta 'src' e subpastas para compilação. */
 }

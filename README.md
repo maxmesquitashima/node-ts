@@ -52,6 +52,7 @@ As asserções são feitas com a função `expect` do Jest, que verifica se um d
     npm install
     ```
 2.  Inicie o servidor de desenvolvimento:
+
     ```bash
     npm run dev
     ```

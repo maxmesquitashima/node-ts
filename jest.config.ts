@@ -1,19 +1,20 @@
-import type {Config} from 'jest';
+import type { Config } from "jest";
 
 const config: Config = {
-  preset: 'ts-jest',
-  testEnvironment: 'node',
+  preset: "ts-jest",
+  testEnvironment: "node",
   transform: {
-    '^.+\\.ts?$': ['ts-jest', {
-      tsconfig: {
-        module: 'commonjs',
-      }
-    }],
+    "^.+\\.ts?$": [
+      "ts-jest",
+      {
+        tsconfig: {
+          module: "commonjs",
+        },
+      },
+    ],
   },
   clearMocks: true,
-  testMatch: [
-    "**/?(*.)+(spec|test).[jt]s?(x)"
-  ],
+  testMatch: ["**/?(*.)+(spec|test).[jt]s?(x)"],
 };
 
 export default config;
