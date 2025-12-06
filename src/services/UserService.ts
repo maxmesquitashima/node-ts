@@ -27,4 +27,8 @@ export class UserService {
   getAllUsers = () => {
     return db;
   };
+
+  deleteUser = (name: string) => {
+    this.db = this.db.filter(user => user.name !== name)
+  }
 }
